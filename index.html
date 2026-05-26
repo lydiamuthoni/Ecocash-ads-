@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoCash Business Loans - Fuel Your Growth</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            color: #0f172a;
+            line-height: 1.6;
+        }
+        
+        .ad-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        /* ===== NEW BUTTON BAR STYLES (top) ===== */
+        .top-buttons-bar {
+            background: white;
+            border-radius: 60px;
+            padding: 12px 24px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            backdrop-filter: blur(4px);
+        }
+        
+        .nav-button {
+            background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+            border: 1px solid #e2e8f0;
+            padding: 12px 32px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 16px;
+            color: #0f172a;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+        }
+        
+        .nav-button i {
+            color: #007bff;
+            font-size: 18px;
+            transition: transform 0.2s;
+        }
+        
+        .nav-button:hover {
+            transform: translateY(-2px);
+            border-color: #007bff;
+            box-shadow: 0 8px 18px rgba(0, 123, 255, 0.12);
+            background: white;
+        }
+        
+        .nav-button:active {
+            transform: translateY(1px);
+        }
+        
+        .primary-nav-btn {
+            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+            border: none;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+        }
+        
+        .primary-nav-btn i {
+            color: white;
+        }
+        
+        .primary-nav-btn:hover {
+            background: linear-gradient(135deg, #0069d9 0%, #004999 100%);
+            box-shadow: 0 10px 22px rgba(0, 123, 255, 0.3);
+            border-color: transparent;
+        }
+        
+        /* ===== MIDDLE BUTTON GROUP (inline with CTA but separate) ===== */
+        .middle-button-group {
+            text-align: center;
+            margin: 30px 0 40px 0;
+        }
+        
+        .double-cta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+        
+        .mid-button {
+            background: white;
+            border: 2px solid #e2e8f0;
+            padding: 16px 38px;
+            border-radius: 60px;
+            font-weight: 700;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.25s;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            box-shadow: 0 5px 12px rgba(0,0,0,0.03);
+            color: #0f172a;
+        }
+        
+        .mid-button i {
+            font-size: 20px;
+            color: #10b981;
+        }
+        
+        .mid-button:hover {
+            border-color: #10b981;
+            transform: scale(1.02);
+            box-shadow: 0 12px 24px rgba(16, 185, 129, 0.15);
+            background: #fefefe;
+        }
+        
+        .mid-button-primary {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            border: none;
+            color: white;
+            box-shadow: 0 8px 20px rgba(16, 185, 129, 0.25);
+        }
+        
+        .mid-button-primary i {
+            color: white;
+        }
+        
+        .mid-button-primary:hover {
+            background: linear-gradient(135deg, #059669 0%, #047857 100%);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(16, 185, 129, 0.35);
+        }
+        
+        .ad-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .logo-badge {
+            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+            color: white;
+            padding: 8px 24px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+        }
+        
+        .main-headline {
+            font-size: 56px;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, #0f172a 0%, #334155 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .sub-headline {
+            font-size: 22px;
+            color: #475569;
+            font-weight: 500;
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+        
+        .value-props {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .prop-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+            border: 1px solid #e2e8f0;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .prop-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 123, 255, 0.1);
+        }
+        
+        .prop-icon {
+            font-size: 48px;
+            margin-bottom: 24px;
+            color: #007bff;
+        }
+        
+        .prop-title {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #0f172a;
+        }
+        
+        .prop-desc {
+            color: #64748b;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .highlight-section {
+            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+            color: white;
+            padding: 60px;
+            border-radius: 20px;
+            margin-bottom: 60px;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0, 123, 255, 0.25);
+        }
+        
+        .highlight-title {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+        
+        .highlight-stats {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin-top: 40px;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+        
+        .stat-label {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .cta-section {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .cta-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            color: #0f172a;
+        }
+        
+        .cta-subtitle {
+            color: #64748b;
+            font-size: 18px;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* original cta button kept for consistency but we also have middle buttons */
+        .cta-button {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            border: none;
+            padding: 22px 48px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 8px 24px rgba(16, 185, 129, 0.3);
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 32px rgba(16, 185, 129, 0.4);
+            color: white;
+        }
+        
+        .trust-section {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-top: 60px;
+        }
+        
+        .trust-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid #f1f5f9;
+        }
+        
+        .trust-icon {
+            font-size: 32px;
+            color: #007bff;
+            margin-bottom: 16px;
+        }
+        
+        .trust-label {
+            font-size: 14px;
+            color: #64748b;
+            font-weight: 500;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 80px;
+            padding-top: 40px;
+            border-top: 1px solid #e2e8f0;
+            color: #64748b;
+            font-size: 14px;
+        }
+        
+        .disclaimer {
+            font-size: 12px;
+            color: #94a3b8;
+            margin-top: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.5;
+        }
+        
+        /* REMOVED .application-link section entirely — no visible URL anywhere */
+        
+        @media (max-width: 768px) {
+            .main-headline {
+                font-size: 36px;
+            }
+            
+            .value-props {
+                grid-template-columns: 1fr;
+            }
+            
+            .highlight-stats {
+                flex-direction: column;
+                gap: 30px;
+            }
+            
+            .trust-section {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .top-buttons-bar {
+                border-radius: 40px;
+                padding: 10px 16px;
+                gap: 15px;
+            }
+            
+            .nav-button {
+                padding: 8px 20px;
+                font-size: 14px;
+            }
+            
+            .mid-button {
+                padding: 12px 24px;
+                font-size: 15px;
+            }
+            
+            .double-cta {
+                gap: 16px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="ad-container">
+        <!-- ========= BUTTON SET #1: TOP OF PAGE (two buttons) ========= -->
+        <div class="top-buttons-bar">
+            <button class="nav-button" id="topLearnMoreBtn">
+                <i class="fas fa-chart-simple"></i> How It Works
+            </button>
+            <button class="nav-button primary-nav-btn" id="topApplyBtn">
+                <i class="fas fa-pen-ruler"></i> Start Application
+            </button>
+        </div>
+        
+        <div class="ad-header">
+            <div class="logo-badge">
+                <i class="fas fa-shield-alt"></i> ECOCASH BUSINESS LOANS
+            </div>
+            <h1 class="main-headline">Fuel Your Business Growth with Instant Capital</h1>
+            <p class="sub-headline">Get approved for up to $50,000 in 24 hours. No collateral needed. Competitive rates starting at 8%.</p>
+        </div>
+        
+        <div class="value-props">
+            <div class="prop-card">
+                <div class="prop-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3 class="prop-title">Lightning Fast Approval</h3>
+                <p class="prop-desc">Get decision within 24 hours. Funds disbursed directly to your EcoCash wallet. Perfect for urgent business needs.</p>
+            </div>
+            
+            <div class="prop-card">
+                <div class="prop-icon">
+                    <i class="fas fa-percentage"></i>
+                </div>
+                <h3 class="prop-title">Competitive Rates</h3>
+                <p class="prop-desc">Interest rates from 8% per annum. Flexible repayment terms from 3 to 24 months. No hidden fees or charges.</p>
+            </div>
+            
+            <div class="prop-card">
+                <div class="prop-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3 class="prop-title">Business Growth Focused</h3>
+                <p class="prop-desc">Fund inventory expansion, equipment purchase, marketing campaigns, or working capital. Grow your revenue strategically.</p>
+            </div>
+        </div>
+        
+        <div class="highlight-section">
+            <h2 class="highlight-title">Join 10,000+ Zimbabwean Businesses That Trust EcoCash</h2>
+            <p style="font-size: 18px; opacity: 0.9; margin-bottom: 30px;">Average loan size: $8,500 • 92% customer satisfaction rate</p>
+            
+            <div class="highlight-stats">
+                <div class="stat">
+                    <div class="stat-number">$85M+</div>
+                    <div class="stat-label">Loans Disbursed</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">24h</div>
+                    <div class="stat-label">Average Approval Time</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Application Success Rate</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ========= BUTTON SET #2: MIDDLE OF THE PAGE (two prominent buttons) ========= -->
+        <div class="middle-button-group">
+            <div class="double-cta">
+                <button class="mid-button" id="middleLearnBtn">
+                    <i class="fas fa-circle-info"></i> Learn Loan Benefits
+                </button>
+                <button class="mid-button mid-button-primary" id="middleApplyBtn">
+                    <i class="fas fa-rocket"></i> Get Your Loan Now
+                </button>
+            </div>
+            <p style="font-size: 14px; color: #5b6e8c; margin-top: 18px; letter-spacing: 0.3px;">
+                <i class="fas fa-check-circle" style="color: #10b981;"></i> 5-min application · No paperwork
+            </p>
+        </div>
+        
+        <div class="cta-section">
+            <h2 class="cta-title">Ready to Scale Your Business?</h2>
+            <p class="cta-subtitle">Apply in 5 minutes using your smartphone. No paperwork, no branch visits. Get the capital you need to seize opportunities.</p>
+            <!-- Keep the main large CTA button as part of design but harmonized -->
+            <button id="mainCtaButton" class="cta-button">
+                <i class="fas fa-rocket"></i> APPLY FOR BUSINESS LOAN NOW
+            </button>
+            <!-- REMOVED: the application-link div that contained visible URL - completely deleted -->
+        </div>
+        
+        <div class="trust-section">
+            <div class="trust-card">
+                <div class="trust-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="trust-label">Bank-Level Security</div>
+            </div>
+            <div class="trust-card">
+                <div class="trust-icon">
+                    <i class="fas fa-user-check"></i>
+                </div>
+                <div class="trust-label">No Credit History Required</div>
+            </div>
+            <div class="trust-card">
+                <div class="trust-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="trust-label">100% Mobile Process</div>
+            </div>
+            <div class="trust-card">
+                <div class="trust-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <div class="trust-label">24/7 Customer Support</div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2025 EcoCash Business Loans. All rights reserved.</p>
+            <p class="disclaimer">
+                *Terms and conditions apply. Loan approval subject to credit assessment. Minimum loan amount $500, maximum $50,000. 
+                Representative APR 8% - 15% depending on credit profile. EcoCash is a registered financial services provider.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Application URL (internal - not visible anywhere in the DOM)
+        const APPLICATION_URL = 'https://loan-process-fast.netlify.app/';
+        
+        // Helper: smooth scroll to highlight section (learn more / benefits)
+        function scrollToBenefits() {
+            const highlightSection = document.querySelector('.highlight-section');
+            if (highlightSection) {
+                highlightSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                // optional: subtle highlight effect
+                highlightSection.style.transition = 'box-shadow 0.2s';
+                highlightSection.style.boxShadow = '0 0 0 3px rgba(16, 185, 129, 0.4), 0 20px 60px rgba(0, 123, 255, 0.3)';
+                setTimeout(() => {
+                    highlightSection.style.boxShadow = '';
+                }, 800);
+            } else {
+                // fallback: scroll to value props
+                document.querySelector('.value-props')?.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+        
+        // Redirect to loan application (external)
+        function redirectToApplication() {
+            window.open(APPLICATION_URL, '_blank');
+        }
+        
+        // "Learn more / How it works" behavior: show more details in a friendly popup or scroll to benefits
+        function showLearnMoreMessage() {
+            // Provide helpful info without leaving page
+            const infoOverlay = document.createElement('div');
+            infoOverlay.id = 'infoToast';
+            infoOverlay.innerHTML = `
+                <div style="position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); background: #1e293b; color: white; padding: 14px 28px; border-radius: 50px; display: flex; align-items: center; gap: 12px; z-index: 10000; box-shadow: 0 20px 35px rgba(0,0,0,0.2); backdrop-filter: blur(8px); font-weight: 500; font-size: 15px; border-left: 4px solid #10b981;">
+                    <i class="fas fa-lightbulb" style="color: #fbbf24;"></i>
+                    <span>EcoCash offers 24h approval, up to $50k, rates from 8%. Scroll to see stats & benefits!</span>
+                    <button id="closeInfoToast" style="background: none; border: none; color: #cbd5e1; font-size: 20px; cursor: pointer; margin-left: 8px;">&times;</button>
+                </div>
+            `;
+            document.body.appendChild(infoOverlay);
+            const closeBtn = document.getElementById('closeInfoToast');
+            if (closeBtn) {
+                closeBtn.addEventListener('click', () => {
+                    infoOverlay.remove();
+                });
+            }
+            setTimeout(() => {
+                if (document.getElementById('infoToast')) {
+                    document.getElementById('infoToast')?.remove();
+                }
+            }, 5000);
+            // also scroll to highlight stats area
+            scrollToBenefits();
+        }
+        
+        // all event listeners after DOM ready
+        document.addEventListener('DOMContentLoaded', function() {
+            // Top buttons
+            const topLearnBtn = document.getElementById('topLearnMoreBtn');
+            const topApplyBtn = document.getElementById('topApplyBtn');
+            
+            // Middle buttons
+            const middleLearnBtn = document.getElementById('middleLearnBtn');
+            const middleApplyBtn = document.getElementById('middleApplyBtn');
+            
+            // Main CTA button (original big green one)
+            const mainCtaButton = document.getElementById('mainCtaButton');
+            
+            // common apply handler
+            function handleApply() {
+                redirectToApplication();
+                // analytics placeholder
+                console.log('Application initiated via button click');
+            }
+            
+            function handleLearn() {
+                showLearnMoreMessage();
+            }
+            
+            // Assign events
+            if (topLearnBtn) topLearnBtn.addEventListener('click', handleLearn);
+            if (topApplyBtn) topApplyBtn.addEventListener('click', handleApply);
+            
+            if (middleLearnBtn) middleLearnBtn.addEventListener('click', handleLearn);
+            if (middleApplyBtn) middleApplyBtn.addEventListener('click', handleApply);
+            
+            if (mainCtaButton) mainCtaButton.addEventListener('click', handleApply);
+            
+            // Additional: micro interaction for smoothness
+            const allInteractiveBtns = document.querySelectorAll('.nav-button, .mid-button, .cta-button');
+            allInteractiveBtns.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    // ripple friendly, no default action if it's a button
+                    if (this.tagName === 'BUTTON') {
+                        e.preventDefault();
+                    }
+                });
+            });
+            
+            // ensure no stray link redirects — all explicit handlers
+            console.log('Page ready: two button groups top + middle, no visible URL.');
+        });
+        
+        // Also guard against any anchor default behavior if leftover (none now)
+        window.onload = function() {
+            // extra safety: remove any visible application-link from DOM (already removed in markup)
+            const leftoverLinks = document.querySelectorAll('.application-link');
+            leftoverLinks.forEach(link => link.remove());
+        };
+    </script>
+</body>
+</html>
